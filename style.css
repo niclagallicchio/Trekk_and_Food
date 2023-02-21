@@ -1,3 +1,11 @@
+:root{
+    --primary-presto:#06a3da;
+    --text-header:white;
+    --text-header-contrast:black;
+
+}
+
+
 
 *{
     font-family: 'Noto Sans', sans-serif;
@@ -7,3 +15,35 @@
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Rubik', sans-serif;
 }
+
+.text-presto{
+    color: var(--primary-presto);
+}
+
+.bg-presto{
+    color: var(--text-header);
+    background-color: var(--primary-presto);
+}
+
+.btn-presto{
+    background-color:var(--primary-presto);
+}
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--primary-presto);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link-icon-presto{
+    color: var(--primary-presto);
+}
+
+.nav-link-icon-presto:hover{
+    color: black!important;
+}
+
