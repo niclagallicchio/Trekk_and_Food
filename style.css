@@ -1,32 +1,43 @@
-:root{
-    --primary-presto:#06a3da;
-    --text-header:white;
-    --text-header-contrast:black;
+:root {
+    --primary-presto: rgb(248, 127, 15); /* #06a3da;*/
+    --text-header: white;
+    --text-header-contrast: black;
 
 }
 
 
 
-*{
+* {
     font-family: 'Noto Sans', sans-serif;
 }
 
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: 'Rubik', sans-serif;
 }
 
-.text-presto{
+.text-presto {
     color: var(--primary-presto);
 }
 
-.bg-presto{
-    color: var(--text-header);
+.bg-presto {
     background-color: var(--primary-presto);
 }
 
-.btn-presto{
-    background-color:var(--primary-presto);
+.btn-presto {
+    color: var(--text-header);
+    background-color: var(--primary-presto);
 }
 
 .nav-link {
@@ -34,16 +45,65 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size: var(--bs-nav-link-font-size);
     font-weight: var(--bs-nav-link-font-weight);
-    color: var(--primary-presto);
+    color: var(--text-header);
     text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
-.nav-link-icon-presto{
+.nav-link-icon-presto {
     color: var(--primary-presto);
 }
 
-.nav-link-icon-presto:hover{
-    color: black!important;
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--primary-presto);
 }
 
+.nav-item {
+    position: relative;
+    padding: 25px 0;
+    transition: all linear 250ms;
+}
+
+#mainNavbar{
+border-color: rgb(171, 171, 171);
+background-color: transparent;
+}
+.navbar-nav .nav-link.active::after {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-presto);
+}
+
+
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-presto);
+}
+
+.navbar-nav .nav-item:not(.dropdown) .nav-link:hover::after {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-presto);
+}
+
+.navbar-nav .nav-link:hover::before {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-presto);
+}
