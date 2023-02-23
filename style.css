@@ -27,6 +27,8 @@ h6,
     font-family: 'Rubik', sans-serif;
 }
 
+
+/* NAVBAR CSS */
 .text-presto {
     color: var(--primary-presto);
 }
@@ -36,11 +38,18 @@ h6,
 }
 
 .btn-presto {
+    padding: 5px 25px;
     color: var(--text-header);
     background-color: var(--primary-presto);
+    border-radius: 2px;
 }
 
-.nav-link {
+.btn-presto:hover {
+    background-color: var(--primary-presto);
+    
+}
+
+.navbar .nav-link {
     display: block;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size: var(--bs-nav-link-font-size);
@@ -50,9 +59,14 @@ h6,
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
-.nav-link-icon-presto {
+.navbar.bg-white .nav-link{
+    color: var(--text-header-contrast) ;
+}
+
+.navbar .nav-item .nav-link-icon-presto {
     color: var(--primary-presto);
 }
+
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
@@ -61,9 +75,17 @@ h6,
 
 .nav-item {
     position: relative;
-    padding: 25px 0;
+    padding: 30px 0;
+    transition: all linear 300ms;
 }
 
+.navbar .navbar-brand{
+    color: var(--text-header);
+}
+
+.navbar.bg-white .navbar-brand{
+    color: var(--primary-presto);
+}
 
 
 #mainNavbar{
@@ -115,5 +137,10 @@ border-color: rgb(171, 171, 171);
 .navbar-nav .nav-link:hover::before {
     width: 70%;
     
+}
+
+.navbar.thin .nav-item{
+    padding: 15px 0;
+
 }
 
