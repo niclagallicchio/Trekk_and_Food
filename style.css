@@ -89,7 +89,12 @@ h6,
 
 
 #mainNavbar{
-border-color: rgb(171, 171, 171);
+border-color: rgb(255, 255, 255);
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 1030;
 }
 
 .navbar-nav .nav-link.active::after {
@@ -142,5 +147,9 @@ border-color: rgb(171, 171, 171);
 .navbar.thin .nav-item{
     padding: 15px 0;
 
+}
+
+.navbar .nav-item{
+    padding: 15px 0;
 }
 

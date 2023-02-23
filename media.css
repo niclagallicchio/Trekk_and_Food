@@ -1,1 +1,15 @@
-@media (min-width: 768px) {  }
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+    #mainNavbar{
+        background-color: rgb(255, 251, 251);
+        position: static;
+        }
+        .navbar .navbar-brand{
+            color: var(--primary-presto);
+        }
+
+        .navbar .nav-item{
+            padding: 15px 0;
+        }
+ }
