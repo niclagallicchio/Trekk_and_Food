@@ -1,5 +1,6 @@
 :root {
-    --primary-presto: rgb(248, 127, 15); /* #06a3da;*/
+    --primary-presto: rgb(231, 112, 1); /* #06a3da;*/
+    --alpha-primary-presto:rgba(146, 71, 0, 0.2);
     --text-header: white;
     --text-header-contrast: black;
 
@@ -157,4 +158,16 @@ z-index: 1030;
     padding: 5px 10px;
     border-color: var(--primary-presto);
     border-radius: 2px;
+}
+
+/* CAROUSEL CSS */
+
+.overlay::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--alpha-primary-presto);
 }
