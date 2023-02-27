@@ -10,6 +10,20 @@
         }
 
         .navbar .nav-item{
-            padding: 15px 0;
+            padding: 0 0;
+        }
+        .navbar.thin .nav-item{
+            padding: 0 0;
+        }
+        .navbar .nav-link{
+            color: var(--text-header-contrast);
+            padding: 5px;
+        }
+        .navbar-nav .nav-link.active::after {
+            height: 0;
+          
+        }
+        .navbar-nav .nav-link::before{  
+            height: 0;
         }
  }
