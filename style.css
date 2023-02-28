@@ -3,6 +3,7 @@
     --alpha-primary-presto:rgba(146, 71, 0, 0.2);
     --text-header: white;
     --text-header-contrast: black;
+    --padding-big-button:10px 30px;
 
 }
 
@@ -170,4 +171,36 @@ z-index: 1030;
     right: 0;
     bottom: 0;
     background-color: var(--alpha-primary-presto);
+}
+
+span{
+    color: var(--text-header);
+}
+
+.btn-big-presto {
+    padding: var(--padding-big-button);
+    color: var(--text-header);
+    background-color: var(--primary-presto);
+    border-radius: 2px;
+    z-index: 9;
+}
+
+.btn-big-presto:hover {
+    color: var(--text-header-contrast);
+    background-color: var(--primary-presto);
+    
+}
+
+.btn-big-white-presto {
+    padding: var(--padding-big-button);
+    color: var(--text-header);
+    border: 1px solid white;
+    border-radius: 2px;
+    
+}
+
+.btn-big-white-presto:hover {
+    color: var(--text-header-contrast);
+    background-color: white;
+    
 }
