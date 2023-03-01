@@ -1,5 +1,6 @@
 :root {
     --primary-presto: rgb(231, 112, 1); /* #06a3da;*/
+    --secondary-presto:#70480b;
     --alpha-primary-presto:rgba(146, 71, 0, 0.2);
     --text-header: white;
     --text-header-contrast: black;
@@ -99,7 +100,7 @@ left: 0;
 z-index: 1030;
 }
 
-.navbar-nav .nav-link.active::after {
+.navbar-nav .nav-link.active::before {
     position: absolute;
     display: inline-block;
     bottom: 0;
@@ -215,3 +216,5 @@ z-index: 1030;
     position: relative;
 
 }
+
+/* FOOTER CSS */
