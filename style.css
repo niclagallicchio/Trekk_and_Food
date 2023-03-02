@@ -1,6 +1,6 @@
 :root {
     --primary-presto: rgb(231, 112, 1); /* #06a3da;*/
-    --secondary-presto:#70480b;
+    --secondary-presto:#eb983b;
     --alpha-primary-presto:rgba(146, 71, 0, 0.2);
     --text-header: white;
     --text-header-contrast: black;
@@ -48,8 +48,7 @@ h6,
 }
 
 .btn-presto:hover {
-    background-color: var(--primary-presto);
-    
+    background-color: var(--primary-presto);   
 }
 
 .navbar .nav-link {
@@ -218,3 +217,38 @@ z-index: 1030;
 }
 
 /* FOOTER CSS */
+
+.text-alternative-presto{
+    color: var(--secondary-presto);
+}
+
+.bg-alternative-presto{
+    background-color: var(--secondary-presto);
+}
+
+.btn-alternative-presto {
+    padding: 5px 25px;
+    color: var(--text-header);
+    background-color: var(--secondary-presto);
+    border-radius: 2px;
+}
+
+.btn-alternative-presto:hover {
+    background-color: var(--secondary-presto);   
+}
+
+.input-presto{
+    border-radius: 2px;
+}
+
+.btn-big-alternative-presto {
+    padding: var(--padding-big-button);
+    color: var(--text-header);
+    background-color: var(--secondary-presto);
+    border-radius: 2px;
+}
+
+.btn-big-alternative-presto:hover {
+    background-color: var(-secondary-presto);
+    
+}
