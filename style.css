@@ -32,6 +32,11 @@ h6,
 
 
 /* NAVBAR CSS */
+.flip{
+    animation: fa-flip;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 .text-presto {
     color: var(--primary-presto);
 }
