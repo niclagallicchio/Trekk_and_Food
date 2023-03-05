@@ -1,6 +1,6 @@
 :root {
     --primary-presto: rgb(231, 112, 1); /* #06a3da;*/
-    --secondary-presto:#eb983b;
+    --secondary-presto:#e8b172;
     --alpha-primary-presto:rgba(146, 71, 0, 0.2);
     --text-header: white;
     --text-header-contrast: black;
@@ -261,4 +261,60 @@ z-index: 1030;
 }
 #mainFooter .nav .nav-link span{
     color: var(--text-header);
+}
+#mainFooter .nav .nav-link i{
+    color: var(--primary-presto);
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: var(--primary-presto);
+}
+.social:hover{
+    color: var(--text-header-contrast);
+}
+.footer-effect{
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.footer-effect::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 4px;
+    background-color: var(--primary-presto);
+    border-radius: 2px;
+}
+.footer-effect::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 4px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    z-index: 1;
+    animation-name: dot;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+@keyframes dot {
+   from{
+    left: 0;
+   }
+   to{
+    left: 40%;
+   }
 }
