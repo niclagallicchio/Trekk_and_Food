@@ -167,9 +167,27 @@
   </section>
   <section style="height: 700px; background-color: white;"></section>
   <!--FORM REGISTRAZIONE-->
-  <section class="container">
+  <section id="signUp" class="container py-5">
     <div class="row">
-      <div class="col-lg-7 col-12"></div>
+      <div class="col-lg-7 col-12">
+        <h3 class="text-presto">CONTATTACI</h3>
+        <h2 class="display-5 fw-semibold">Scopri luoghi meravigliosi a prezzi davvero esclusivi</h2>
+        <div class="d-flex justify-content-between py-4 pe-5">
+          <div class="d-flex pe-2 align-items-center">
+            <span><i class="fa-2x fa-solid fa-gauge-simple-high me-3 text-presto"></i></span>
+            <span class="fs-5">Risposta entro 24h</span>
+        </div>
+        <div class="d-flex pe-2 align-items-center">
+            <span><i class="fa-2x fa-solid fa-circle-check me-3 text-presto"></i></span>
+            <span class="fs-5">Pagamenti sicuri</span>
+        </div>
+      </div>
+        <p>Compila il form accanto con tutte le informazioni richieste e un nostro operatore ti ricontatterà al più presto.</p>
+        <div class="d-flex pe-2 align-items-center">
+          <span><i class="fa-2x fa-solid fa-circle-check me-3 text-presto"></i></span>
+          <span class="fs-5">Pagamenti sicuri</span>
+      </div>
+      </div>
       <div class="col-lg-5 col-12 bg-presto p-4">
         <form action="">
           <input class="form-control input-presto my-3" type="text"  placeholder="Nome">
@@ -180,8 +198,14 @@
             <option value="1">Only Trekking</option>
             <option value="2">Trekking and Food</option>
           </select>
-          <textarea class="form-control input-presto my-3" id="exampleFormControlTextarea1" rows="3"></textarea>
-          <button type="submit" class="btn btn-big-alternative-presto w-100">Invio richiesta</button>
+          <select class="form-select input-presto my-3" aria-label="Default select example">
+          <option selected>Quante persone?</option>
+            <option value="1">1-2</option>
+            <option value="2">Gruppo da 3-5</option>
+            <option value="2">Gruppo da 6-10</option>
+            <option value="2">Gruppo da 11+</option>
+          </select>
+          <button type="submit" class="btn btn-big-alternative-presto w-100 mt-5">Invio richiesta</button>
         </form>
       </div>
     </div>
